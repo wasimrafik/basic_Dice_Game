@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Dice Game Started</title>
+    <style>
+      .h2top {
+        margin: 20px 40%;
+      }
+      #won {
+        margin: 20px 40%;
+      }
+      #user1page2,
+      #user2page2 {
+        margin: 20px 40%;
+      }
+      .roll {
+        margin: 20px 40%;
+        margin-right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: green;
+        font-size: 25px;
+      }
+
+      #reset {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: red;
+        font-size: 25px;
+      }
+      .allimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+      #imgholder1 {
+        height: 200px;
+        width: 200px;
+        background-image: url(Dice1.jpg);
+        margin: 20px auto;
+        background-size: cover;
+      }
+      #imgholder2 {
+        height: 200px;
+        width: 200px;
+        background-image: url(Dice1.jpg);
+        margin: 20px auto;
+        background-size: cover;
+      }
+      h1 {
+        width: 100%;
+        margin: 100px 35%;
+        margin-bottom: 30px;
+      }
+
+      #user1,
+      #user2 {
+        margin: 10px 40%;
+        padding: 10px;
+      }
+      .homebtn {
+        margin: 10px 44%;
+        
+      }
+      #player1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #player2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #won{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .h2top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #sec2{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <section id="sec1">
+      <h1>Welcome To Dice Game</h1>
+      <form action="AssignmentJS3.html">
+        <input type="text" id="user1" placeholder="Enter User1 Name" />
+        <br />
+        <br />
+        <input type="text" id="user2" placeholder="Enter User2 Name" />
+      </form>
+      <br />
+
+      <br />
+    <button class="homebtn" onclick="start()">Let's Go</button>
+
+
+    </section>
+
+
+
+
+
+    <section id="sec2">
+      <div>
+        <h2 class="h2top">Dice Game</h2>
+        <h5 id="won"></h5>
+        <p id="player1"></p>
+        <p id="player2"></p>
+      </div>
+
+      <div class="allimg">
+        <div id="imgholder1"></div>
+
+        <div id="imgholder2"></div>
+      </div>
+      <button class="roll" id="btn" onclick="roll1()">Roll</button>
+      <button id="reset" onclick="rest()">Reset</button>
+    </section>
+
+    <script src="Assignmentjs.js"></script>
+  </body>
+</html>
